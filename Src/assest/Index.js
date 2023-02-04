@@ -1,0 +1,25 @@
+const imgPath = {
+    Bargur:require('../assest/images/bargur.png'),
+    pizza:require('../assest/images/pizza.png'),
+    snacks:require('../assest/images/snacks.png'),
+cheesepizza:require("../assest/images/cheesepizza.png"),
+star:require('../assest/images/star.png'),
+locationkm:require('../assest/images/loctionkm.png'),
+momos:require('../assest/images/momos.png'),
+chole:require('../assest/images/cholebhature.png'),
+panner:require('../assest/images/panner.png'),
+panjabi:require('../assest/images/punjabithali.png'),
+pannerpiza:require('../assest/images/paneerpizza.png'),
+upto:require('../assest/images/upto.png'),
+pasta:require('../assest/images/whitepasta.png'),
+momoss:require('../assest/images/momoss.png'),
+noodles:require('../assest/images/noodles.png'),
+upto:require('../assest/images/burgurup.png'),
+pannerup:require('../assest/images/pannerup.png'),
+idliup:require('../assest/images/idliup.png'),
+vegthaliup:require('../assest/images/vegthaliup.png'),
+snacksup:require('../assest/images/snacksup.png'),
+star:require('../assest/images/pinkstar.png'),
+
+}
+export default imgPath;
