@@ -17,13 +17,14 @@ import MYCARD from '../screen/MYCARD';
 import FOODMENU from '../screen/FOODMENU';
 import UPTOORDER from '../screen/UPTOORDER';
 import Ordernow from '../screen/Ordernow';
+import TabNavigation from './TabNavigation';
 
 const Stack = createNativeStackNavigator();
 
 const StackNavigation = () => {
     return (
         <NavigationContainer >
-            <Stack.Navigator  >
+            <Stack.Navigator initialRouteName='TabNavigation' >
                 <Stack.Screen name='GetStart' component={GetStart} />
                 <Stack.Screen name='User' component={User} options={{ headerShown: false }} />
                 <Stack.Screen name='Signup' component={Signup} options={{ headerShown: false }} />
@@ -40,6 +41,7 @@ const StackNavigation = () => {
                 <Stack.Screen name='FOODMENU' component={FOODMENU} options={{ headerShown: false }} />
                 <Stack.Screen name='UPTOORDER' component={UPTOORDER} options={{ headerShown: false }} />
                 <Stack.Screen name='Ordernow' component={Ordernow} options={{ headerShown: false }} />
+                <Stack.Screen name='TabNavigation' component={TabNavigation}/>
 
 
 

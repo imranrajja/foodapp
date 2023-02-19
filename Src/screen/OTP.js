@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View, Image, ImageBackground, TextInput,TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
+import OtpScreen from '../assest/component/UI/OtpScreen'
+import Input from '../assest/component/UI/Input'
 
 const OTP = ({ navigation }) => {
   return (
@@ -20,24 +22,20 @@ const OTP = ({ navigation }) => {
             <Text style={styles.number}>Enter OTP Send To </Text>
             <Text style={styles.ak}>9587198288</Text>
           </View>
-          <View style={styles.imran}>
-            <View style={styles.rajja}><TextInput style={styles.otptext} maxLength={1} keyboardType={'numeric'} /></View>
-            <View style={styles.rajja}><TextInput style={styles.otptext} maxLength={1}   keyboardType={'numeric'}/></View>
-            <View style={styles.rajja}><TextInput style={styles.otptext} maxLength={1}   keyboardType={'numeric'} /></View>
-            <View style={styles.rajja}><TextInput style={styles.otptext} maxLength={1}  keyboardType={'numeric'} /></View>
-
-          </View>
+          <OtpScreen/>
 
           <View>
           <TouchableOpacity style={styles.touch} onPress={()=>navigation.navigate('User')}  >
             <Text style={styles.butt}>SUBMIT</Text>
           </TouchableOpacity>
         </View>
+       
 
         <View style={styles.main}>
             <Text style={styles.number}>Did't Receive the OTP? </Text>
             <Text onPress={()=>navigation.navigate('OTP')} style={styles.ak}>RESEND </Text>
           </View>
+      
 
         </View>
 
@@ -59,7 +57,7 @@ const styles = StyleSheet.create({
   white: {
     backgroundColor: 'white',
     width: '90%',
-    height: 350,
+    height: 450,
     alignSelf: 'center',
     marginTop: -150,
     borderWidth:1,borderColor:'grey'
@@ -85,18 +83,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignSelf: 'center'
   },
-  imran: {
-    flexDirection: "row",
-    alignSelf: "center",
-    marginTop: 30
-  },
-  rajja: {
-    width: 50,
-    height: 50,
-    backgroundColor: "pink",
-    alignSelf: "center",
-    marginHorizontal: 10,
-  },
+
   touch: {
     alignSelf: 'center',
     marginVertical: 30,
@@ -111,8 +98,5 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold'
   },
-  otptext:{
-    fontSize:20555,
-    color:"black"
-  }
+
 })
